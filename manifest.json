@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Search Clear",
+    "version": "0.1",
+    "description": "Add banned words to your search",
+    "permissions": ["webRequest", "storage", "webRequestBlocking"],
+    "host_permissions": ["*://*.google.com/*", "*://*.bing.com/*", "*://*.duckduckgo.com/*", "*://*.yahoo.com/*", "*://*.baidu.com/*", "*://*.yandex.com/*"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "options_ui": {
+        "page": "options.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "@searchClearExtension",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    }
+}

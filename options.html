@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Clear</title>
+        <style>
+            /* Grundlayout */
+            body {
+                margin: 0;
+                padding: 24px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+                background: #f6f7f9;
+                color: #1f2933;
+                line-height: 1.6;
+            }
+
+            /* Zentrierter Content */
+            body > * {
+                max-width: 700px;
+                margin-left: 30%;
+                margin-right: 15%;
+            }
+
+            /* Überschriften */
+            h1 {
+                font-size: 1.8rem;
+                margin-top: 0;
+                margin-bottom: 0.4em;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                margin-top: 2em;
+                margin-bottom: 0.4em;
+                border-bottom: 2px solid #e5e7eb;
+                padding-bottom: 4px;
+            }
+
+            /* Text */
+            p {
+                margin-top: 0.3em;
+                margin-bottom: 1em;
+                color: #4b5563;
+            }
+
+            /* Block für dynamische Inhalte */
+            #blockedWords {
+                background: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 8px;
+                padding: 12px;
+                min-height: 40px;
+                margin-bottom: 12px;
+                color: #111827;
+            }
+
+            /* Inputs */
+            input[type="text"],
+            input[type="password"] {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 12px;
+                margin-bottom: 10px;
+                border-radius: 8px;
+                border: 1px solid #d1d5db;
+                background: #ffffff;
+                font-size: 1rem;
+                transition: border-color 0.15s ease, box-shadow 0.15s ease;
+            }
+
+            input::placeholder {
+                color: #9ca3af;
+            }
+
+            input:focus {
+                outline: none;
+                border-color: #2563eb;
+                box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+            }
+
+            /* Buttons */
+            button {
+                padding: 10px 16px;
+                border-radius: 8px;
+                border: none;
+                background: #2563eb;
+                color: #ffffff;
+                font-size: 0.95rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background 0.15s ease, transform 0.05s ease;
+                margin-bottom: 12px;
+            }
+
+            button:hover {
+                background: #1d4ed8;
+            }
+
+            button:active {
+                transform: translateY(1px);
+            }
+
+            /* Sekundäre Buttons leicht abheben */
+            #editWords {
+                background: #6b7280;
+            }
+
+            #editWords:hover {
+                background: #4b5563;
+            }
+
+            /* Trennlinie */
+            hr {
+                border: none;
+                border-top: 1px solid #e5e7eb;
+                margin: 32px 0;
+            }
+
+            /* Kleine Hinweise */
+            p:last-of-type {
+                font-size: 0.9rem;
+                color: #6b7280;
+            }
+
+            /* Mobile Feinschliff */
+            @media (max-width: 600px) {
+                body {
+                    padding: 16px;
+                }
+
+                body > * {
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+
+                input{
+                    width: 80% !important; 
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Search Clear Options</h1>
+        <p>Here you can configure the options for the Search Clear extension.</p>
+        <h2>Banned Words</h2>
+        <p id="blockedWords"></p>
+        <button id="editWords">Edit Words</button>
+        <h2>Add a Banned Word</h2>
+        <input type="text" id="newBlockedWord">
+        <button id="addBlockedWord">Add</button>
+        <p>Separate keywords with commas</p>
+        <hr>
+        <h1>Masterpassword</h1>
+        <p>Set your masterpassword here:</p>
+        <input type="password" id="currentMasterpassword" placeholder="Current Masterpassword">
+        <input type="password" id="masterpassword" placeholder="New Masterpassword">
+        <button id="saveMasterpassword">Save Masterpassword</button>
+        <script src="options.js"></script>
+    </body>
+</html>
