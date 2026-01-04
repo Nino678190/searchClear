@@ -1,6 +1,6 @@
 # searchClear ✨
 
-[![License: LGPL-2.1](https://img.shields.io/badge/License-LGPL%202.1-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/Nino678190/searchClear)](https://github.com/Nino678190/searchClear/releases) [![Issues](https://img.shields.io/github/issues/Nino678190/searchClear)](https://github.com/Nino678190/searchClear/issues)
+[![License: LGPL-2.1](https://img.shields.io/badge/License-LGPL%202.1-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/Nino678190/searchClear)](https://github.com/Nino678190/searchClear/releases) [![Issues](https://img.shields.io/github/issues/Nino678190/searchClear)](https://github.com/Nino678190/searchClear/issues) [![Hackatime](https://hackatime-badge.hackclub.com/U07F2KK3Z29/extensionTest)](https://hackatime-badge.hackclub.com/U07F2KK3Z29/extensionTest)
 
 **searchClear** is a lightweight **browser extension** that helps you **clear or reset searches** easily, ensuring your searches remain clean and unaffected by previous input.
 
