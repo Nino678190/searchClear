@@ -72,6 +72,3 @@ See [LICENSE](LICENSE) for details.
 
 Bug reports, feature requests, and pull requests are welcome!
 Please open an **issue** or **pull request** on GitHub.
-
-
-Do you want me to do that next?
